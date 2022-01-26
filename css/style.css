@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #ccc;
+}
+
+.main{
+    height: 100%;
+    padding: 1rem;
+    margin: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items:center;
+
+    border-radius: 10px;
+    background-color: #7ff;
+}
+#map{
+    height: 32rem;
+    width: 32rem;
+}
+
+form{
+    width: 100%;
+    margin: 1rem 0;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>MY Map</title>
+</head>
+<body>
+
+    <div class="main">
+        <div id="map"></div>
+
+        <form action="">
+            <input id="lat-input" type="text" placeholder="Latitude">
+            <input id="long-input" type="text" placeholder="Longitude">
+            <button id="send-btn" type="button">Send</button>
+        </form>
+
+        <div class="display">
+            <p id="lat-out"></p>
+            <p id="long-out"></p>
+        </div>
+    </div>
+
+    <script src="/myGoogleMap/js/app.js"></script>
+    <script async
+       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBwa_VfKb4tg-XypdKerbp9AKAbabjlVI&callback=initMap">
+    </script>
+</body>
+</html>
