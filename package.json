@@ -1,0 +1,25 @@
+{
+  "name": "mytracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/douglaslimab/MyTracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/douglaslimab/MyTracker/issues"
+  },
+  "homepage": "https://github.com/douglaslimab/MyTracker#readme",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "pg": "^8.7.1"
+  }
+}
