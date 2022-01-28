@@ -13,18 +13,39 @@
         <div id="map"></div>
 
         <form action="">
-            <input id="lat-input" type="text" placeholder="Latitude">
-            <input id="long-input" type="text" placeholder="Longitude">
+            <div class="entry-row">
+                <p>Entry ID</p>
+                <input id="entry-id" readonly>
+            </div>
+            <div class="entry-row">
+                <p>Date</p>
+                <input id="date" readonly>
+            </div>
+            <div class="entry-row">
+                <p>Latitude</p>
+                <input id="lat-out" readonly>
+            </div>
+            <div class="entry-row">
+                <p>Longitude</p>
+                <input id="long-out" readonly>
+            </div>
+            <div class="entry-row">
+                <p>Classification</p>
+                <input id="class" type="text" placeholder="">
+            </div>
+            <div class="entry-row">
+                <p>Description</p>
+                <textarea id="desc" type="text" placeholder=""></textarea>
+            </div>
             <button id="send-btn" type="button">Send</button>
         </form>
 
         <div class="display">
-            <p id="lat-out"></p>
             <p id="long-out"></p>
         </div>
     </div>
 
-    <script src="/myGoogleMap/js/app.js"></script>
+    <script src="/js/app.js"></script>
     <script async
        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBwa_VfKb4tg-XypdKerbp9AKAbabjlVI&callback=initMap">
     </script>

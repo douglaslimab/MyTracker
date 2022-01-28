@@ -19,21 +19,24 @@ function initMap() {
         map: map
     })
 
-    dublin = {coords: { lat: 36.533333, lng: -6.283333 }}
+    dublin = {coords: { "lat": 36.533333, "lng": -6.283333 }}
     addMarker(dublin)
 
 
     google.maps.event.addListener(map, 'click', function(event){
-        addMarker({coords: event.latLng})
-        console.log(JSON.stringify(event.latLng))
+        addMarker({"coords": event.latLng})
 
-        while(latOut.firstChild){
-            latOut.removeChild(latOut.firstChild)
-        }
+        let latitude = event.latLng.lat()
+        let longitude = event.latLng.lng()
 
-        latOut.insertAdjacentHTML("beforeend", JSON.stringify(event.latLng))
+        console.log(latitude)
+        console.log(longitude)
+
+        latOut.value = latitude
+        longOut.value = longitude
+//        latOut.insertAdjacentHTML("beforeend", latitude.toFixed(2))
+//        longOut.insertAdjacentHTML("beforeend", longitude.toFixed(2))
     })
-
 }
 
 function addMarker(props){
