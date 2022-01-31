@@ -45,9 +45,3 @@ function addMarker(props){
         map: map
     })
 }
-
-//  entry_id
-//  title   (classification)
-//  coments (breef description)
-//  cordinates
-//  date
